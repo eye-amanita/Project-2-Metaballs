@@ -34,7 +34,7 @@ class Field {
         }
 
         this.img.updatePixels();
-        this.img.filter(GRAY)
+        this.img.filter(GRAY);
         // this.img.filter(THRESHOLD, thresh)
 
         image(this.img,fieldX,fieldY);
