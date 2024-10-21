@@ -20,10 +20,15 @@ function setup() {
 function draw() {
   background(51);
   testField.render(200,100);
+  testField.render(100,100);
 
   //thresh = thresh < 1 ? thresh + 0.005 : 0;
   //filter(GRAY);
   //filter(THRESHOLD, thresh)
+}
+
+function mouseClicked() {
+  testField.reset();
 }
 
 

@@ -9,7 +9,7 @@ class Field {
 
     reset() {
         this.blobs = [];
-        for (i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
+        for (let i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
     }
 
     render(fieldX,fieldY) {
@@ -35,7 +35,7 @@ class Field {
 
         this.img.updatePixels();
         this.img.filter(GRAY)
-        this.img.filter(THRESHOLD, thresh)
+        // this.img.filter(THRESHOLD, thresh)
 
         image(this.img,fieldX,fieldY);
     }
