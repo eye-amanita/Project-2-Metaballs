@@ -7,6 +7,7 @@ let testField;
 let thresh = 0.2;
 var fieldArray = [];
 
+
 function setup() {
   createCanvas(600, 600);
 
@@ -29,6 +30,7 @@ function setup() {
 }
 
 function draw() {
+  let arrayNumber = 0;
   background(51);
   // testField1.render(100,100);
   // testField2.render(200,100);
@@ -36,9 +38,10 @@ function draw() {
   // testField4.render(400,100);
 
   
-for (var i = 0; i < 3; ++i) {
-  for (var y = 0; y < 3; ++y) {
-    fieldArray[y+i].render (150+100*i,150+100*y);
+for (var gridY = 0; gridY < 3; ++gridY) {
+  for (var gridX = 0; gridX < 3; ++gridX) {
+    fieldArray[arrayNumber].render (150+100*gridY,150+100*gridX);
+    arrayNumber = arrayNumber + 1;
   }
 }
 
@@ -58,6 +61,10 @@ function mouseClicked() {
   testField2.reset();
   testField3.reset();
   testField4.reset();
+  testField6.reset();
+  testField7.reset();
+  testField8.reset();
+  testField9.reset();
 
 }
 

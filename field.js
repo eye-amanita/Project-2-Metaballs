@@ -4,6 +4,7 @@ class Field {
         this.blobs = [];
         for (let i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
         this.img = createImage(100,100);
+        this.color = []
     }
 
 
@@ -39,4 +40,6 @@ class Field {
 
         image(this.img,fieldX,fieldY);
     }
+
+    
 }
