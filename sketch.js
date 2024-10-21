@@ -25,17 +25,14 @@ function setup() {
   
   fieldArray = [testField1, testField2, testField3, testField4, testField5, testField6, testField7, testField8, testField9]
   
-  frameRate(7);
+  frameRate(12);
   
 }
 
 function draw() {
   let arrayNumber = 0;
-  background(51);
-  // testField1.render(100,100);
-  // testField2.render(200,100);
-  // testField3.render(300,100);
-  // testField4.render(400,100);
+  background(93);
+  
 
   
 for (var gridY = 0; gridY < 3; ++gridY) {
@@ -47,7 +44,7 @@ for (var gridY = 0; gridY < 3; ++gridY) {
 
   // thresh = thresh < 1 ? thresh + 0.005 : 0;
   // filter(GRAY);
-  // filter(THRESHOLD, thresh)
+  // filter(THRESHOLD, thresh);
 
 
   // fill(255);
@@ -61,6 +58,7 @@ function mouseClicked() {
   testField2.reset();
   testField3.reset();
   testField4.reset();
+  testField5.reset();
   testField6.reset();
   testField7.reset();
   testField8.reset();
