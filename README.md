@@ -1,4 +1,4 @@
-# Project 2
+# Project 2 - Modular Metaballs
 
 *Adapted from [Dan Schiffman/thecodingtrain's Metaball Script (p5.js Version by Basile Petin)](https://editor.p5js.org/codingtrain/sketches/ISPozOLXW)*
 
