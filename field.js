@@ -3,6 +3,9 @@ class Field {
     constructor() {
         this.blobs = [];
         for (let i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
+        
+        this.blobSize = random(9,14);
+
         this.img = createImage(100,100);
 
         this.deepGreenS = color(146, 99, 51);
@@ -52,7 +55,7 @@ class Field {
         this.color = random(this.colorArray);
     }
 
-    render(fieldX,fieldY,threshed) {
+    render(fieldX,fieldY,threshed,palette) {
         this.img.loadPixels();
 
         for (let x = 0; x < 100; x++) {
@@ -62,7 +65,7 @@ class Field {
                     let xdif = x - this.blobs[i].x;
                     let ydif = y - this.blobs[i].y;
                     let d = sqrt((xdif * xdif) + (ydif * ydif));
-                    sum += 15 * this.blobs[i].r / d;
+                    sum += this.blobSize * this.blobs[i].r / d;
                 }
                 this.img.set(x, y, color(sum, 255, 255));
             }
@@ -89,8 +92,12 @@ class Field {
 
         image(this.img,fieldX,fieldY);
 
+        if (palette) {
+            fill(this.color2);
+        } else {
+            fill(this.color);
+        }
         
-        fill(this.color,);
         strokeWeight(0);
         square(fieldX,fieldY,100);
         blendMode(BLEND);
