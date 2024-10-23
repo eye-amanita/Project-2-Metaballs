@@ -6,7 +6,7 @@
 // let testField;
 
 let thresh = false;
-let color2 = false;
+let color2 = true;
 
 var fieldArray = [];
 var countArray = [1,2,3,4];

@@ -4,7 +4,7 @@ class Field {
         this.blobs = [];
         for (let i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
         
-        this.blobSize = random(9,14);
+        this.blobSize = random(9,16);
 
         this.img = createImage(100,100);
 
@@ -53,6 +53,7 @@ class Field {
         this.blobs = [];
         for (let i = 0; i < random(2,5); i++) this.blobs.push(new Blob(random(0, 100), random(0, 100)));
         this.color = random(this.colorArray);
+        this.color2 = random(this.colorArray2);
     }
 
     render(fieldX,fieldY,threshed,palette) {
@@ -101,6 +102,7 @@ class Field {
         strokeWeight(0);
         square(fieldX,fieldY,100);
         blendMode(BLEND);
+
 
         
     }
