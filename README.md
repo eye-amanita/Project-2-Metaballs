@@ -6,13 +6,13 @@
 
 ### Controls:
 
-Mouse Click: Reset Entire Composition
+**Mouse Click:** Reset Entire Composition
 
-Press C: Change Color Palette
+**Press C:** Change Color Palette
 
-Press R: Reroll Colors
+**Press R:** Reroll Colors
 
-Press Spacebar: Switch to Threshold Mode
+**Press Spacebar:** Switch to Threshold Mode
 
 
 
