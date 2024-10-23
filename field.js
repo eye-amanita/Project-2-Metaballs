@@ -8,12 +8,12 @@ class Field {
 
         this.img = createImage(100,100);
 
-        this.deepGreenS = color(146, 99, 51);
-        this.fuschiaS = color(325, 84, 94);
-        this.lightBlueS = color(194, 100, 77);
+        this.deepGreenS = color(147, 99, 69);
+        this.fuschiaS = color(315, 79, 99);
+        this.lightBlueS = color(189, 100, 92);
         this.orangeS = color(42, 90, 100);
-        this.redS = color(357, 99, 76);
-        this.deepBlueS = color(231, 80, 52);
+        this.redS = color(357, 99, 91);
+        this.deepBlueS = color(231, 79, 71);
 
         this.teal = color(176, 87, 73);
         this.chartreuse = color(71, 69, 100);
