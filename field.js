@@ -12,8 +12,8 @@ class Field {
         this.fuschiaS = color(315, 79, 99);
         this.lightBlueS = color(189, 100, 92);
         this.orangeS = color(42, 90, 100);
-        this.redS = color(357, 99, 91);
-        this.deepBlueS = color(231, 79, 71);
+        this.redS = color(357, 75, 96);
+        this.deepBlueS = color(230, 70, 95);
 
         this.teal = color(176, 87, 73);
         this.chartreuse = color(71, 69, 100);
