@@ -24,7 +24,7 @@ class Field {
         this.color = random(this.colorArray);
     }
 
-    render(fieldX,fieldY) {
+    render(fieldX,fieldY,threshed) {
         this.img.loadPixels();
 
         for (let x = 0; x < 100; x++) {
@@ -47,14 +47,21 @@ class Field {
 
         this.img.updatePixels();
         this.img.filter(GRAY);
-        // this.img.filter(THRESHOLD, thresh)
+        
+        if (threshed) {
+            this.img.filter(THRESHOLD, 0.15);
+        }
+
+    
         
         
         
+        
+        blendMode(MULTIPLY);
 
         image(this.img,fieldX,fieldY);
 
-        blendMode(MULTIPLY);
+        
         fill(this.color,);
         strokeWeight(0);
         square(fieldX,fieldY,100);

@@ -4,7 +4,7 @@
 // MetaBalls : p5.js implementation
 
 let testField;
-let thresh = 0.2;
+let thresh = false;
 var fieldArray = [];
 var countArray = [1,2,3,4];
 
@@ -13,6 +13,7 @@ var gridRowCount;
 
 var gridOffsetX;
 var gridOffsetY;
+
 
 
 
@@ -76,14 +77,13 @@ function draw() {
   
 for (var gridX = 0; gridX < gridColumnCount; ++gridX) {
   for (var gridY = 0; gridY < gridRowCount; ++gridY) {
-    fieldArray[arrayNumber].render (gridOffsetX+(100*gridX),gridOffsetY+(100*gridY));
+    fieldArray[arrayNumber].render(gridOffsetX+(100*gridX),gridOffsetY+(100*gridY),thresh);
     arrayNumber = arrayNumber + 1;
   }
 }
 
   // thresh = thresh < 1 ? thresh + 0.005 : 0;
-  // filter(GRAY);
-  // filter(THRESHOLD, thresh);
+  
 
 
   // fill(255);
@@ -123,6 +123,10 @@ function gridVariablesReset() {
   gridColumnCount = random(countArray);
   gridRowCount = random(countArray);
 
+}
+
+function keyPressed() {
+    thresh = !thresh;
 }
 
 
