@@ -11,7 +11,7 @@ class Field {
         this.deepGreenS = color(146, 99, 51);
         this.fuschiaS = color(325, 84, 94);
         this.lightBlueS = color(194, 100, 77);
-        this.orangeS = color(31, 93, 100);
+        this.orangeS = color(42, 90, 100);
         this.redS = color(357, 99, 76);
         this.deepBlueS = color(231, 80, 52);
 
@@ -67,7 +67,7 @@ class Field {
                     let d = sqrt((xdif * xdif) + (ydif * ydif));
                     sum += this.blobSize * this.blobs[i].r / d;
                 }
-                this.img.set(x, y, color(sum, 255, 255));
+                this.img.set(x, y, color(sum, 100, 255));
             }
         }
         
