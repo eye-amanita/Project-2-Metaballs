@@ -134,6 +134,11 @@ function keyPressed() {
     color2 = !color2;
   }
 
+  if (key === 'r') {
+    fieldArray.map((field) => field.reroll());  
+  }
+
+  
   if (key === ' ') {
     thresh = !thresh;
   }

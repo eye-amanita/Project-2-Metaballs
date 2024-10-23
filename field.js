@@ -56,6 +56,11 @@ class Field {
         this.color2 = random(this.colorArray2);
     }
 
+    reroll(){
+        this.color = random(this.colorArray);
+        this.color2 = random(this.colorArray2);  
+    }
+
     render(fieldX,fieldY,threshed,palette) {
         this.img.loadPixels();
 
