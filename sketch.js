@@ -3,8 +3,11 @@
 
 // MetaBalls : p5.js implementation
 
-let testField;
+// let testField;
+
 let thresh = false;
+let color2 = false;
+
 var fieldArray = [];
 var countArray = [1,2,3,4];
 
@@ -77,7 +80,7 @@ function draw() {
   
 for (var gridX = 0; gridX < gridColumnCount; ++gridX) {
   for (var gridY = 0; gridY < gridRowCount; ++gridY) {
-    fieldArray[arrayNumber].render(gridOffsetX+(100*gridX),gridOffsetY+(100*gridY),thresh);
+    fieldArray[arrayNumber].render(gridOffsetX+(100*gridX),gridOffsetY+(100*gridY),thresh,color2);
     arrayNumber = arrayNumber + 1;
   }
 }
@@ -126,7 +129,15 @@ function gridVariablesReset() {
 }
 
 function keyPressed() {
+
+  if (key === 'c') {
+    color2 = !color2;
+  }
+
+  if (key === ' ') {
     thresh = !thresh;
+  }
+    
 }
 
 

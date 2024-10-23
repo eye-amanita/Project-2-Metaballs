@@ -12,9 +12,37 @@ class Field {
         this.redS = color(357, 99, 76);
         this.deepBlueS = color(231, 80, 52);
 
+        this.teal = color(176, 87, 73);
+        this.chartreuse = color(71, 69, 100);
+        this.coral = color(1, 61, 100);
+        this.magenta = color(315, 82, 100);
+        this.skyBlue = color(198, 78, 100);
+        this.yellow = color(55, 99, 100);
+        this.raspberry = color(340, 86, 85);
+        this.fullOrange = color(31, 100, 100);
+
         
-        this.colorArray = [this.deepGreenS, this.fuschiaS, this.lightBlueS, this.orangeS, this.redS, this.deepBlueS];
+        this.colorArray = [
+            this.deepGreenS, 
+            this.fuschiaS, 
+            this.lightBlueS, 
+            this.orangeS, 
+            this.redS, 
+            this.deepBlueS];
+
+        this.colorArray2 = [
+            this.teal,
+            this.chartreuse,
+            this.coral,
+            this.magenta,
+            this.skyBlue,
+            this.yellow,
+            this.raspberry,
+            this.orangeS,
+            this.fullOrange,];
+
         this.color = random(this.colorArray);
+        this.color2 = random(this.colorArray2);
     }
 
 
